@@ -1,3 +1,19 @@
 # stylelint-config-hipo-base
 
-Shareable CSS/SCSS linting configurations
+Hipo's shareable CSS/SCSS linting configurations
+
+## Installation
+
+```console
+$ npm install stylelint-config-hipo-base
+```
+
+## Usage
+
+Set your stylelint config to:
+
+```json
+{
+  "extends": "stylelint-config-hipo-base"
+}
+```

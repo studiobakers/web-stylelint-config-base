@@ -1,0 +1,29 @@
+{
+  "name": "stylelint-config-hipo-base",
+  "version": "0.1.0",
+  "description": "Shareable StyleLint configuations for CSS and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hipo/stylelint-config-hipo-base.git"
+  },
+  "keywords": [
+    "stylelintconfig",
+    "stylelint",
+    "hipo"
+  ],
+  "author": "Hipo Web Team",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Hipo/stylelint-config-hipo-base/issues"
+  },
+  "homepage": "https://github.com/Hipo/stylelint-config-hipo-base#readme",
+  "peerDependencies": {
+    "stylelint": "^8.1.1",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^2.1.0"
+  }
+}
