@@ -186,6 +186,7 @@ module.exports = {
     "unit-no-unknown": true,
     "unit-whitelist": [
       "px",
+      "fr",
       "deg",
       "%",
       "s",
@@ -230,14 +231,23 @@ module.exports = {
           "emptyLineBefore": "always",
           "properties": [
             "display",
-            "float",
-            "clear",
-            "vertical-align",
             "flex-direction",
             "flex-wrap",
             "align-items",
+            "align-content",
+            "justify-items",
             "justify-content",
-            "align-self"
+            "grid",
+            "grid-template",
+            "grid-template-rows",
+            "grid-template-columns",
+            "grid-template-areas",
+            "grid-gap",
+            "grid-row-gap",
+            "grid-column-gap",
+            "grid-auto-flow",
+            "grid-auto-rows",
+            "grid-auto-columns"
           ]
         },
         {
@@ -252,7 +262,14 @@ module.exports = {
             "flex",
             "flex-basis",
             "flex-grow",
-            "flex-shrink"
+            "flex-shrink",
+            "grid-area",
+            "grid-column",
+            "grid-row",
+            "grid-column-start",
+            "grid-column-end",
+            "grid-row-start",
+            "grid-row-end"
           ]
         },
         {
@@ -266,6 +283,16 @@ module.exports = {
             "overflow-y",
             "clip",
             "zoom"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "float",
+            "clear",
+            "vertical-align",
+            "align-self",
+            "justify-self"
           ]
         },
         {
