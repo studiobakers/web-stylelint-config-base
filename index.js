@@ -233,6 +233,7 @@ module.exports = {
             "display",
             "flex-direction",
             "flex-wrap",
+            "flex-flow",
             "align-items",
             "align-content",
             "justify-items",
