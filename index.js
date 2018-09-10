@@ -190,7 +190,9 @@ module.exports = {
       "deg",
       "%",
       "s",
-      "ms"
+      "ms",
+      "vh",
+      "vw"
     ],
     "value-keyword-case": "lower",
     "value-list-comma-newline-after": "always-multi-line",
