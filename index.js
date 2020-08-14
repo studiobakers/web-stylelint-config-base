@@ -189,6 +189,7 @@ module.exports = {
     "unit-no-unknown": true,
     "unit-whitelist": [
       "px",
+      "em",
       "fr",
       "deg",
       "%",
