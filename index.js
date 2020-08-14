@@ -62,7 +62,8 @@ module.exports = {
           "first-nested"
         ],
         "ignore": [
-          "after-declaration"
+          "after-declaration",
+          "after-comment"
         ]
       }
     ],
