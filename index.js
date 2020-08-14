@@ -27,6 +27,7 @@ module.exports = {
     "comment-empty-line-before": [
       "always",
       {
+        "except": ["first-nested"],
         "ignore": [
           "after-comment",
           "stylelint-commands"
