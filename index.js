@@ -37,7 +37,6 @@ module.exports = {
     ],
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
-    "comment-word-blacklist": [],
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
     "declaration-block-no-duplicate-properties": [
@@ -70,14 +69,9 @@ module.exports = {
       }
     ],
     "declaration-no-important": true,
-    "declaration-property-unit-blacklist": {},
-    "declaration-property-unit-whitelist": {},
-    "declaration-property-value-blacklist": {},
-    "declaration-property-value-whitelist": {},
     "font-family-name-quotes": "always-unless-keyword",
     "font-family-no-duplicate-names": true,
     "font-weight-notation": "numeric",
-    "function-blacklist": [],
     "function-calc-no-unspaced-operator": true,
     "function-comma-newline-after": "always-multi-line",
     "function-comma-space-after": "always",
@@ -98,7 +92,6 @@ module.exports = {
     "max-nesting-depth": 5,
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
-    "media-feature-name-blacklist": [],
     "media-feature-name-case": "lower",
     "media-feature-name-no-unknown": true,
     "media-feature-name-no-vendor-prefix": true,
@@ -125,7 +118,6 @@ module.exports = {
     "number-leading-zero": "always",
     "number-max-precision": 3,
     "number-no-trailing-zeros": true,
-    "property-blacklist": [],
     "property-case": "lower",
     "property-no-unknown": true,
     "property-no-vendor-prefix": [
@@ -141,7 +133,6 @@ module.exports = {
       }
     ],
     "selector-attribute-brackets-space-inside": "never",
-    "selector-attribute-operator-blacklist": [],
     "selector-attribute-operator-space-after": "never",
     "selector-attribute-operator-space-before": "never",
     "selector-attribute-quotes": "always",
@@ -169,7 +160,6 @@ module.exports = {
       }
     ],
     "selector-no-vendor-prefix": true,
-    "selector-pseudo-class-blacklist": [],
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-no-unknown": true,
     "selector-pseudo-class-parentheses-space-inside": "never",
@@ -181,13 +171,9 @@ module.exports = {
     "shorthand-property-no-redundant-values": true,
     "string-no-newline": true,
     "string-quotes": "double",
-    "unit-blacklist": [
-      "rem",
-      "em"
-    ],
     "unit-case": "lower",
     "unit-no-unknown": true,
-    "unit-whitelist": [
+    "unit-allowed-list": [
       "px",
       "em",
       "fr",
