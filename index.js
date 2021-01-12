@@ -195,15 +195,15 @@ module.exports = {
     "order/order": [
       [
         "dollar-variables",
-        "custom-properties",
+        "at-rules",
         {
           "type": "at-rule",
           "name": "include",
           "hasBlock": false
         },
+        "custom-properties",
         "declarations",
-        "rules",
-        "at-rules"
+        "rules"
       ]
     ],
     "order/properties-order": [
