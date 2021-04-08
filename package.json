@@ -1,6 +1,6 @@
 {
   "name": "@hipo/stylelint-config-base",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Shareable StyleLint configuations for CSS and SCSS",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/Hipo/stylelint-config-hipo-base#readme",
   "peerDependencies": {
-    "stylelint": "^13.8.0",
+    "stylelint": "^13.12.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.19.0"
   }
 }
