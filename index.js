@@ -235,6 +235,7 @@ module.exports = {
             "grid-template-rows",
             "grid-template-columns",
             "grid-template-areas",
+            "gap",
             "grid-gap",
             "grid-row-gap",
             "grid-column-gap",
