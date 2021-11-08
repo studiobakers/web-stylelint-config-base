@@ -1,20 +1,16 @@
 "use strict";
 
 module.exports = {
-  "plugins": [
-    "stylelint-order",
-    "stylelint-scss"
-  ],
-  "rules": {
+  extends: ["stylelint-config-standard-scss"],
+
+  plugins: ["stylelint-order", "stylelint-scss"],
+  rules: {
     "block-closing-brace-empty-line-before": "never",
     "block-closing-brace-newline-after": [
       "always",
       {
-        "ignoreAtRules": [
-          "if",
-          "else"
-        ]
-      }
+        ignoreAtRules: ["if", "else"],
+      },
     ],
     "block-opening-brace-space-before": "always",
     "block-closing-brace-newline-before": "always",
@@ -28,12 +24,9 @@ module.exports = {
     "comment-empty-line-before": [
       "always",
       {
-        "except": ["first-nested"],
-        "ignore": [
-          "after-comment",
-          "stylelint-commands"
-        ]
-      }
+        except: ["first-nested"],
+        ignore: ["after-comment", "stylelint-commands"],
+      },
     ],
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
@@ -42,10 +35,8 @@ module.exports = {
     "declaration-block-no-duplicate-properties": [
       true,
       {
-        "ignore": [
-          "consecutive-duplicates"
-        ]
-      }
+        ignore: ["consecutive-duplicates"],
+      },
     ],
     "declaration-block-no-shorthand-property-overrides": true,
     "declaration-block-semicolon-newline-after": "always",
@@ -59,14 +50,9 @@ module.exports = {
     "declaration-empty-line-before": [
       "always",
       {
-        "except": [
-          "first-nested"
-        ],
-        "ignore": [
-          "after-declaration",
-          "after-comment"
-        ]
-      }
+        except: ["first-nested"],
+        ignore: ["after-declaration", "after-comment"],
+      },
     ],
     "declaration-no-important": true,
     "font-family-name-quotes": "always-unless-keyword",
@@ -84,7 +70,7 @@ module.exports = {
     "function-url-no-scheme-relative": true,
     "function-url-quotes": "always",
     "function-whitespace-after": "always",
-    "indentation": 2,
+    indentation: 2,
     "keyframe-declaration-no-important": true,
     "length-zero-no-unit": true,
     "max-empty-lines": 1,
@@ -106,10 +92,8 @@ module.exports = {
     "no-eol-whitespace": [
       true,
       {
-        "ignore": [
-          "empty-lines"
-        ]
-      }
+        ignore: ["empty-lines"],
+      },
     ],
     "no-extra-semicolons": true,
     "no-invalid-double-slash-comments": true,
@@ -120,17 +104,12 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "property-case": "lower",
     "property-no-unknown": true,
-    "property-no-vendor-prefix": [
-      true,
-      {}
-    ],
+    "property-no-vendor-prefix": [true, {}],
     "rule-empty-line-before": [
       "always",
       {
-        "except": [
-          "first-nested"
-        ]
-      }
+        except: ["first-nested"],
+      },
     ],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-space-after": "never",
@@ -153,11 +132,8 @@ module.exports = {
     "selector-no-qualifying-type": [
       true,
       {
-        "ignore": [
-          "attribute",
-          "class"
-        ]
-      }
+        ignore: ["attribute", "class"],
+      },
     ],
     "selector-no-vendor-prefix": true,
     "selector-pseudo-class-case": "lower",
@@ -173,17 +149,7 @@ module.exports = {
     "string-quotes": "double",
     "unit-case": "lower",
     "unit-no-unknown": true,
-    "unit-allowed-list": [
-      "px",
-      "em",
-      "fr",
-      "deg",
-      "%",
-      "s",
-      "ms",
-      "vh",
-      "vw"
-    ],
+    "unit-allowed-list": ["px", "em", "fr", "deg", "%", "s", "ms", "vh", "vw"],
     "value-keyword-case": "lower",
     "value-list-comma-newline-after": "always-multi-line",
     "value-list-comma-space-after": "always-single-line",
@@ -197,31 +163,24 @@ module.exports = {
         "dollar-variables",
         "at-rules",
         {
-          "type": "at-rule",
-          "name": "include",
-          "hasBlock": false
+          type: "at-rule",
+          name: "include",
+          hasBlock: false,
         },
         "custom-properties",
         "declarations",
-        "rules"
-      ]
+        "rules",
+      ],
     ],
     "order/properties-order": [
       [
         {
-          "emptyLineBefore": "always",
-          "properties": [
-            "position",
-            "top",
-            "bottom",
-            "left",
-            "right",
-            "z-index"
-          ]
+          emptyLineBefore: "always",
+          properties: ["position", "top", "bottom", "left", "right", "z-index"],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "display",
             "flex-direction",
             "flex-wrap",
@@ -241,12 +200,12 @@ module.exports = {
             "grid-column-gap",
             "grid-auto-flow",
             "grid-auto-rows",
-            "grid-auto-columns"
-          ]
+            "grid-auto-columns",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "width",
             "min-width",
             "max-width",
@@ -263,12 +222,12 @@ module.exports = {
             "grid-column-start",
             "grid-column-end",
             "grid-row-start",
-            "grid-row-end"
-          ]
+            "grid-row-end",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "box-sizing",
             "visibility",
             "clear",
@@ -276,22 +235,22 @@ module.exports = {
             "overflow-x",
             "overflow-y",
             "clip",
-            "zoom"
-          ]
+            "zoom",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "float",
             "clear",
             "vertical-align",
             "align-self",
-            "justify-self"
-          ]
+            "justify-self",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "margin",
             "margin-top",
             "margin-bottom",
@@ -301,12 +260,12 @@ module.exports = {
             "padding-top",
             "padding-bottom",
             "padding-left",
-            "padding-right"
-          ]
+            "padding-right",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "color",
             "background",
             "background-color",
@@ -360,12 +319,12 @@ module.exports = {
             "box-decoration-break",
             "box-shadow",
             "visibility",
-            "opacity"
-          ]
+            "opacity",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "content",
             "quotes",
             "counter-reset",
@@ -378,12 +337,12 @@ module.exports = {
             "nav-right",
             "nav-down",
             "nav-left",
-            "pointer-events"
-          ]
+            "pointer-events",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "font",
             "font-family",
             "font-size",
@@ -420,12 +379,12 @@ module.exports = {
             "word-wrap",
             "word-break",
             "tab-size",
-            "hyphens"
-          ]
+            "hyphens",
+          ],
         },
         {
-          "emptyLineBefore": "always",
-          "properties": [
+          emptyLineBefore: "always",
+          properties: [
             "transform",
             "transform-origin",
             "animation",
@@ -440,13 +399,13 @@ module.exports = {
             "transition-delay",
             "transition-timing-function",
             "transition-duration",
-            "transition-property"
-          ]
-        }
+            "transition-property",
+          ],
+        },
       ],
       {
-        "unspecified": "ignore"
-      }
-    ]
-  }
+        unspecified: "ignore",
+      },
+    ],
+  },
 };
