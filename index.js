@@ -14,6 +14,8 @@ module.exports = {
     ],
     "block-opening-brace-space-before": "always",
     "block-closing-brace-newline-before": "always",
+    "scss/at-import-partial-extension": null,
+    "scss/at-import-no-partial-leading-underscore": null,
     "block-no-empty": true,
     "block-opening-brace-newline-after": "always",
     "color-hex-case": "upper",

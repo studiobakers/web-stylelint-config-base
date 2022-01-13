@@ -23,10 +23,10 @@
   "homepage": "https://github.com/Hipo/stylelint-config-hipo-base#readme",
   "peerDependencies": {
     "stylelint": "^14.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.0.1"
   },
   "devDependencies": {
-    "stylelint-config-standard-scss": "^2.0.1"
+    "stylelint-config-standard-scss": "^3.0.0"
   }
 }
