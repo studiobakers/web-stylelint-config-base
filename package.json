@@ -1,6 +1,6 @@
 {
   "name": "@hipo/stylelint-config-base",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Shareable StyleLint configuations for CSS and SCSS",
   "main": "index.js",
   "scripts": {
