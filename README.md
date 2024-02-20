@@ -1,6 +1,6 @@
 # @hipo/stylelint-config-base
 
-Hipo's shareable stylelint configurations.
+Baker's shareable stylelint configurations.
 
 ## Installation
 
